@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gujarat Expedition 2025 — An Immersive Journey</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">GUJARAT</div>
+  <div class="loader-sub">EXPEDITION 2025</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">गुजरात</div>
+  <div class="nav-links">
+    <a href="#journey">Journey</a>
+    <a href="#girnar">Girnar</a>
+    <a href="#gir">Gir</a>
+    <a href="#palitana">Palitana</a>
+    <a href="#ahmedabad">Ahmedabad</a>
+    <a href="#ekta">Ekta Nagar</a>
+    <a href="#budget">Budget</a>
+    <a href="#final">Memories</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="particles" id="particles"></div>
+  <div class="ambient-orb" style="width:500px;height:500px;background:#C9922A;top:20%;left:-10%"></div>
+  <div class="ambient-orb" style="width:300px;height:300px;background:#E8663A;bottom:10%;right:0%;animation-delay:4s"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">An Immersive Travel Documentary</div>
+    <h1 class="hero-title">
+      Gujarat<span>Expedition</span>
+    </h1>
+    <div class="hero-dates">16 June – 24 June 2025 &nbsp;·&nbsp; 9 Days &nbsp;·&nbsp; 3 Explorers</div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">9</div><div class="hero-stat-label">Days</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">7</div><div class="hero-stat-label">Cities</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">4</div><div class="hero-stat-label">Trains</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">2</div><div class="hero-stat-label">Major Treks</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">1</div><div class="hero-stat-label">Safari</div></div>
+    </div>
+    <a href="#journey" class="cta-btn"><span>Begin The Journey ↓</span></a>
+  </div>
+
+  <!-- Animated Route SVG -->
+  <div class="route-map">
+    <svg viewBox="0 0 700 120" width="100%">
+      <defs>
+        <marker id="arrowH" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#C9922A" stroke-width="1.5"/>
+        </marker>
+      </defs>
+      <!-- Route line animated -->
+      <path id="routePath" d="M 50 60 C 100 60 130 40 180 45 C 230 50 250 70 300 65 C 350 60 380 55 430 58 C 480 61 520 50 570 55 C 590 57 620 60 650 60"
+        fill="none" stroke="#C9922A" stroke-width="1.5" stroke-dasharray="5,4" opacity=".5" marker-end="url(#arrowH)"/>
+      <!-- Cities -->
+      <g font-family="'Inter',sans-serif" fill="#F5F0E8">
+        <circle cx="50" cy="60" r="5" fill="#C9922A"/>
+        <circle cx="180" cy="45" r="5" fill="#E8663A"/>
+        <circle cx="260" cy="70" r="4" fill="#4CAF50"/>
+        <circle cx="300" cy="65" r="4" fill="#C9922A"/>
+        <circle cx="380" cy="55" r="5" fill="#7B68EE"/>
+        <circle cx="430" cy="58" r="6" fill="#D4501A"/>
+        <circle cx="565" cy="55" r="5" fill="#1A6B8A"/>
+        <circle cx="650" cy="60" r="5" fill="#C9922A"/>
+        <text x="50" y="80" text-anchor="middle" font-size="9" fill="#888">Mumbai</text>
+        <text x="180" y="32" text-anchor="middle" font-size="9" fill="#E8663A">Junagadh</text>
+        <text x="260" y="86" text-anchor="middle" font-size="9" fill="#4CAF50">Gir</text>
+        <text x="300" y="52" text-anchor="middle" font-size="9" fill="#C9922A">Somnath</text>
+        <text x="380" y="40" text-anchor="middle" font-size="9" fill="#7B68EE">Palitana</text>
+        <text x="430" y="74" text-anchor="middle" font-size="9" fill="#D4501A">Ahmedabad</text>
+        <text x="568" y="40" text-anchor="middle" font-size="9" fill="#1A6B8A">Ekta Nagar</text>
+        <text x="650" y="76" text-anchor="middle" font-size="9" fill="#888">Mumbai</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- JOURNEY TIMELINE -->
+<section id="journey" class="fade-in-section" style="background:#0D0D0D;padding:5rem 2rem">
+  <div style="max-width:900px;margin:0 auto">
+    <div class="section-eyebrow" style="color:#C9922A">Day by Day</div>
+    <h2 class="section-title">The <em>Complete</em> Journey</h2>
+    <div class="divider" style="background:#C9922A"></div>
+    <p class="section-body" style="margin-bottom:3rem">Every train, every temple, every step of the way. Mumbai to Gujarat and back — 9 unforgettable days for 3 explorers.</p>
+
+    <div class="timeline">
+
+      <!-- Day 1 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Tue, 16 Jun</div><div class="day-title">Departure — The Journey Begins</div></div>
+          <div class="day-num">01</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">1:45 PM</div><div class="act-text">Board 19217 Saurashtra Janta Express from Bandra Terminus</div><span class="act-badge badge-travel">Train</span></div>
+          <div class="activity-row"><div class="act-time">Overnight</div><div class="act-text">Sleeper class · Overnight journey to Junagadh</div><span class="act-badge badge-stay">Stay</span></div>
+        </div>
+        <div class="day-note">💡 Carry food & water for overnight journey</div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Wed, 17 Jun</div><div class="day-title">Girnar Trek — The Great Ascent</div></div>
+          <div class="day-num">02</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">4:45 AM</div><div class="act-text">Arrive Junagadh station → Walk ~1 km to Dharamshala near Girnar Taleti</div><span class="act-badge badge-travel">Arrive</span></div>
+          <div class="activity-row"><div class="act-time">5:15 AM</div><div class="act-text">Check-in, freshen up, store heavy luggage</div><span class="act-badge badge-stay">Stay</span></div>
+          <div class="activity-row"><div class="act-time">7:00 AM</div><div class="act-text">Girnar Trek Ascent → Neminath Temple (4000 steps!)</div><span class="act-badge badge-trek">Trek</span></div>
+          <div class="activity-row"><div class="act-time">2:00 PM</div><div class="act-text">Trek Descent — Hydrate well, take it slow</div><span class="act-badge badge-trek">Trek</span></div>
+          <div class="activity-row"><div class="act-time">6:00 PM</div><div class="act-text">Dinner at local eatery near Taleti · Overnight stay</div><span class="act-badge badge-food">Dinner</span></div>
+        </div>
+        <div class="day-note">💡 Carry sufficient water & snacks for 4000 steps!</div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Thu, 18 Jun</div><div class="day-title">Safari · Somnath · Palitana</div></div>
+          <div class="day-num">03</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">4:30 AM</div><div class="act-text">Check out from Dharamshala, travel to Gir Forest Gate (Booked Car)</div><span class="act-badge badge-travel">Travel</span></div>
+          <div class="activity-row"><div class="act-time">6:30 AM</div><div class="act-text">🦁 Jungle Safari — Gir National Park (Best chance to spot Asiatic Lion!)</div><span class="act-badge badge-trek">Safari</span></div>
+          <div class="activity-row"><div class="act-time">7:30 AM</div><div class="act-text">Breakfast at Farmhouse Restaurant — Local Kathiyawadi cuisine</div><span class="act-badge badge-food">Food</span></div>
+          <div class="activity-row"><div class="act-time">9:30 AM</div><div class="act-text">Travel to Somnath Temple (One of 12 Jyotirlingas!)</div><span class="act-badge badge-travel">Drive</span></div>
+          <div class="activity-row"><div class="act-time">12:00 PM</div><div class="act-text">Visit Somnath Temple · Attend noon aarti if possible</div><span class="act-badge badge-visit">Temple</span></div>
+          <div class="activity-row"><div class="act-time">1:30 PM</div><div class="act-text">Travel to Palitana (~2.5 hrs drive by booked car)</div><span class="act-badge badge-travel">Drive</span></div>
+          <div class="activity-row"><div class="act-time">5:00 PM</div><div class="act-text">Check-in at Narsi Natha Trust Dharamshala, Palitana · Jain pilgrimage town</div><span class="act-badge badge-stay">Stay</span></div>
+        </div>
+        <div class="day-note">💡 Pre-book safari permit online at girlion.in · Mandatory!</div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Fri, 19 Jun</div><div class="day-title">Rest Day — Palitana</div></div>
+          <div class="day-num">04</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">All Day</div><div class="act-text">Full Rest Day at Palitana — Body recovery before major trek</div><span class="act-badge badge-stay">Rest</span></div>
+          <div class="activity-row"><div class="act-time">Optional</div><div class="act-text">Explore Palitana Town — Visit local markets, light meals (veg only)</div><span class="act-badge badge-visit">Explore</span></div>
+        </div>
+        <div class="day-note">💡 Sleep early! The Palitana Trek starts at 6:00 AM tomorrow</div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Sat, 20 Jun</div><div class="day-title">Palitana Trek · Night Ahmedabad · Manek Chowk</div></div>
+          <div class="day-num">05</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">6:00 AM</div><div class="act-text">Palitana Trek — Shatrunjaya Hills (900+ Jain Temples! ~3,800 steps)</div><span class="act-badge badge-trek">Trek</span></div>
+          <div class="activity-row"><div class="act-time">3:00 PM</div><div class="act-text">Rest, freshen up & checkout from Narsi Natha Trust</div><span class="act-badge badge-stay">Checkout</span></div>
+          <div class="activity-row"><div class="act-time">4:00 PM</div><div class="act-text">Local Taxi → Songadh Railway Station</div><span class="act-badge badge-travel">Taxi</span></div>
+          <div class="activity-row"><div class="act-time">7:06 PM</div><div class="act-text">Board 12972 BVC-BDTS SF Express → Ahmedabad (Sleeper SL)</div><span class="act-badge badge-travel">Train</span></div>
+          <div class="activity-row"><div class="act-time">11:25 PM</div><div class="act-text">Arrive Ahmedabad → Auto to Manek Chowk Night Market</div><span class="act-badge badge-food">Night Market</span></div>
+          <div class="activity-row"><div class="act-time">12:30 AM</div><div class="act-text">Check-in Dharamshala, Ahmedabad</div><span class="act-badge badge-stay">Stay</span></div>
+        </div>
+        <div class="day-note">🌙 Famous for Dal Vada & Falooda — try everything at Manek Chowk!</div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Sun, 21 Jun</div><div class="day-title">Ahmedabad Sightseeing Day 1</div></div>
+          <div class="day-num">06</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">8:00 AM</div><div class="act-text">Sabarmati Ashram & Riverfront — Peaceful morning with Gandhi's legacy</div><span class="act-badge badge-visit">Visit</span></div>
+          <div class="activity-row"><div class="act-time">1:00 PM</div><div class="act-text">Gujarati Thali Lunch at Local Restaurant</div><span class="act-badge badge-food">Lunch</span></div>
+          <div class="activity-row"><div class="act-time">2:30 PM</div><div class="act-text">Adalaj Stepwell (stunning 5-storey!) & Akshardham Temple, Gandhinagar</div><span class="act-badge badge-visit">Visit</span></div>
+          <div class="activity-row"><div class="act-time">7:00 PM</div><div class="act-text">Evening at Kankaria Lake / Law Garden Night Market (shopping)</div><span class="act-badge badge-food">Evening</span></div>
+        </div>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Mon, 22 Jun</div><div class="day-title">Ahmedabad Heritage Day</div></div>
+          <div class="day-num">07</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">9:00 AM</div><div class="act-text">Sidi Saiyyed Mosque & Old City Heritage Walk (UNESCO World Heritage)</div><span class="act-badge badge-visit">Heritage</span></div>
+          <div class="activity-row"><div class="act-time">1:00 PM</div><div class="act-text">Lunch — Try Khakhra & Handvo at local eatery</div><span class="act-badge badge-food">Lunch</span></div>
+          <div class="activity-row"><div class="act-time">2:30 PM</div><div class="act-text">Science City / CEPT / Hutheesing Temple sightseeing</div><span class="act-badge badge-visit">Visit</span></div>
+          <div class="activity-row"><div class="act-time">6:30 PM</div><div class="act-text">Shopping & Dinner — CG Road / Manek Chowk (Last Ahmedabad evening!)</div><span class="act-badge badge-food">Shop & Dine</span></div>
+        </div>
+        <div class="day-note">💡 Pack bags tonight for early morning Day 8 departure</div>
+      </div>
+
+      <!-- Day 8 -->
+      <div class="day-card">
+        <div class="day-header">
+          <div><div class="day-date">Tue, 23 Jun</div><div class="day-title">Statue of Unity · Final Night Train</div></div>
+          <div class="day-num">08</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">6:00 AM</div><div class="act-text">Wake up, checkout from Dharamshala Ahmedabad</div><span class="act-badge badge-stay">Checkout</span></div>
+          <div class="activity-row"><div class="act-time">7:55 AM</div><div class="act-text">Board 20947 Jan Shatabdi Express → Ekta Nagar (2S class)</div><span class="act-badge badge-travel">Train</span></div>
+          <div class="activity-row"><div class="act-time">11:30 AM</div><div class="act-text">Arrive Ekta Nagar (Kevadia) · Shuttle to attraction zone</div><span class="act-badge badge-travel">Arrive</span></div>
+          <div class="activity-row"><div class="act-time">12:30 PM</div><div class="act-text">Visit Statue of Unity & Flower Valley (book online; carry IDs!)</div><span class="act-badge badge-visit">SoU</span></div>
+          <div class="activity-row"><div class="act-time">5:00 PM</div><div class="act-text">Valley of Flowers · Jungle Safari Zone · Cactus & Butterfly Garden</div><span class="act-badge badge-visit">Explore</span></div>
+          <div class="activity-row"><div class="act-time">9:28 PM</div><div class="act-text">Board 12928 EKNR-DDR SF Express → Dadar, Mumbai (Overnight · Last Train!)</div><span class="act-badge badge-travel">Return</span></div>
+        </div>
+        <div class="day-note">🎯 Last leg of the epic journey — journey home!</div>
+      </div>
+
+      <!-- Day 9 -->
+      <div class="day-card" style="border-color:rgba(201,146,42,.4);background:rgba(201,146,42,.06)">
+        <div class="day-header">
+          <div><div class="day-date">Wed, 24 Jun</div><div class="day-title">🎉 Trip Ends — Welcome Home!</div></div>
+          <div class="day-num" style="color:#C9922A">09</div>
+        </div>
+        <div class="day-activities">
+          <div class="activity-row"><div class="act-time">5:30 AM</div><div class="act-text">Arrive Dadar Station, Mumbai · Trip successfully completed! 🎉</div><span class="act-badge badge-visit">Home</span></div>
+        </div>
+        <div class="day-note" style="border-color:#C9922A;color:#E8B840">✨ 9 days, 7 cities, 2 treks, 1 safari, 4 trains — an expedition complete!</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GIRNAR SECTION -->
+<section id="girnar" class="theme-girnar fade-in-section" style="--accent:#E8663A">
+  <div class="section-inner">
+    <div class="ambient-orb" style="width:400px;height:400px;background:#E8663A;top:10%;right:-5%"></div>
+    <div class="place-hero">
+      <div class="place-accent" style="color:#E8663A">GIRNAR</div>
+      <div class="place-content">
+        <div class="section-eyebrow" style="color:#E8663A">Day 2 · Wed, 17 Jun</div>
+        <h2 class="section-title" style="color:#F5F0E8">The <em style="color:#E8663A">Sacred</em><br>Summit</h2>
+        <div class="divider" style="background:#E8663A"></div>
+        <p class="section-body">Girnar Hills rise 1,000+ metres above Junagadh — a sacred mountain dotted with Jain and Hindu temples. The path to Neminath Temple demands nearly 10,000 steps of pure devotion, rewarded by sunrise views over the Saurashtra plains.</p>
+      </div>
+    </div>
+
+    <div class="place-facts">
+      <div class="fact-card"><div class="fact-icon">🏔️</div><div class="fact-label">Steps</div><div class="fact-value">4000 Steps</div></div>
+      <div class="fact-card"><div class="fact-icon">⛩️</div><div class="fact-label">Destination</div><div class="fact-value">Neminath Temple</div></div>
+      <div class="fact-card"><div class="fact-icon">⏰</div><div class="fact-label">Trek Duration</div><div class="fact-value">7 Hours (7AM–2PM)</div></div>
+      <div class="fact-card"><div class="fact-icon">🌅</div><div class="fact-label">Start</div><div class="fact-value">7:00 AM · Sunrise</div></div>
+      <div class="fact-card"><div class="fact-icon">🏨</div><div class="fact-label">Stay</div><div class="fact-value">Dharamshala, Girnar Taleti</div></div>
+      <div class="fact-card"><div class="fact-icon">📍</div><div class="fact-label">Location</div><div class="fact-value">Junagadh, Gujarat</div></div>
+    </div>
+
+    <!-- Step Progress -->
+    <div style="margin-top:3rem">
+      <div class="section-eyebrow" style="color:#E8663A">The Climb</div>
+      <div class="step-count" id="girnarCount">0</div>
+      <div style="font-size:.8rem;color:#888;margin-bottom:1rem">steps to Dattatreya</div>
+      <div style="background:rgba(255,255,255,.08);border-radius:4px;height:10px;overflow:hidden">
+        <div id="girnarBar" style="height:100%;background:linear-gradient(90deg,#E8663A,#C9922A);width:0;transition:width 2s ease;border-radius:4px"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:.75rem;color:#666;margin-top:.5rem">
+        <span>Taleti (Base)</span><span>Neminath Temple (Top)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GIR FOREST SECTION -->
+<section id="gir" class="theme-gir fade-in-section" style="--accent:#4CAF50">
+  <div class="section-inner">
+    <div class="ambient-orb" style="width:500px;height:500px;background:#2D7A2D;top:-10%;left:-5%"></div>
+    <div class="place-hero">
+      <div class="place-accent" style="color:#2D7A2D">GIR</div>
+      <div class="place-content">
+        <div class="section-eyebrow" style="color:#4CAF50">Day 3 · Thu, 18 Jun · 6:30 AM</div>
+        <h2 class="section-title" style="color:#F5F0E8">Heart of the <em style="color:#4CAF50">Jungle</em></h2>
+        <div class="divider" style="background:#4CAF50"></div>
+        <p class="section-body">The last refuge of the Asiatic Lion on Earth. Gir National Park holds mysteries that unfold at dawn — the jeep rolls into the forest as mist clings to the trees, and every rustle could be the king himself.</p>
+      </div>
+    </div>
+
+    <div class="place-facts">
+      <div class="fact-card" style="border-color:rgba(76,175,80,.2)"><div class="fact-icon">🦁</div><div class="fact-label">Highlight</div><div class="fact-value">Asiatic Lion Safari</div></div>
+      <div class="fact-card" style="border-color:rgba(76,175,80,.2)"><div class="fact-icon">⏰</div><div class="fact-label">Safari Time</div><div class="fact-value">6:30 – 7:30 AM</div></div>
+      <div class="fact-card" style="border-color:rgba(76,175,80,.2)"><div class="fact-icon">🚙</div><div class="fact-label">Transport</div><div class="fact-value">Jeep Safari</div></div>
+      <div class="fact-card" style="border-color:rgba(76,175,80,.2)"><div class="fact-icon">🍳</div><div class="fact-label">Post-Safari</div><div class="fact-value">Farmhouse Breakfast</div></div>
+      <div class="fact-card" style="border-color:rgba(76,175,80,.2)"><div class="fact-icon">💰</div><div class="fact-label">Cost</div><div class="fact-value">₹4,200 (÷3 = ₹1,400/person)</div></div>
+      <div class="fact-card" style="border-color:rgba(76,175,80,.2)"><div class="fact-icon">📋</div><div class="fact-label">Booking</div><div class="fact-value">girlion.in (Mandatory)</div></div>
+    </div>
+
+    <div style="margin-top:3rem">
+      <div class="section-eyebrow" style="color:#4CAF50">Wildlife Encounters</div>
+      <div class="animal-cards">
+        <div class="animal-card"><div class="animal-emoji">🦁</div><div class="animal-name">Asiatic Lion</div><div class="animal-note">Last wild population on Earth</div></div>
+        <div class="animal-card"><div class="animal-emoji">🐆</div><div class="animal-name">Leopard</div><div class="animal-note">Elusive forest dweller</div></div>
+        <div class="animal-card"><div class="animal-emoji">🦌</div><div class="animal-name">Sambar Deer</div><div class="animal-note">Often seen in clearings</div></div>
+        <div class="animal-card"><div class="animal-emoji">🐊</div><div class="animal-name">Mugger Crocodile</div><div class="animal-note">Near Hiran river banks</div></div>
+        <div class="animal-card"><div class="animal-emoji">🦚</div><div class="animal-name">Indian Peafowl</div><div class="animal-note">Abundant through forest</div></div>
+        <div class="animal-card"><div class="animal-emoji">🦌</div><div class="animal-name">Chital</div><div class="animal-note">Spotted deer in herds</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;padding:1.5rem;border:1px solid rgba(76,175,80,.2);border-radius:12px;background:rgba(76,175,80,.05)">
+      <div style="font-size:.8rem;color:#4CAF50;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem">Post-Safari</div>
+      <div style="font-size:1.1rem;color:#F5F0E8">Breakfast at Farmhouse Restaurant, Near Gir Forest</div>
+      <div style="font-size:.85rem;color:#888;margin-top:.3rem">Local Kathiyawadi cuisine · ₹200 per person</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOMNATH SECTION -->
+<section id="somnath" class="theme-somnath fade-in-section" style="--accent:#C9922A">
+  <div class="section-inner">
+    <div class="ambient-orb" style="width:400px;height:400px;background:#C9922A;top:20%;right:0"></div>
+    <div class="place-hero">
+      <div class="place-accent" style="color:#C9922A">SOMNATH</div>
+      <div class="place-content">
+        <div class="section-eyebrow" style="color:#C9922A">Day 3 · Thu, 18 Jun · Noon</div>
+        <h2 class="section-title" style="color:#F5F0E8">First of the <em>Twelve</em><br>Jyotirlingas</h2>
+        <div class="divider" style="background:#C9922A"></div>
+        <p class="section-body">Where the sea meets the sacred. Somnath Temple has been destroyed and rebuilt seven times — a testament to the indestructible spirit of devotion. Standing by the ocean at noon, the temple glows gold against an endless Arabian Sea.</p>
+      </div>
+    </div>
+    <div class="place-facts">
+      <div class="fact-card"><div class="fact-icon">⛩️</div><div class="fact-label">Significance</div><div class="fact-value">1 of 12 Jyotirlingas</div></div>
+      <div class="fact-card"><div class="fact-icon">🌊</div><div class="fact-label">Setting</div><div class="fact-value">Arabian Sea Coastline</div></div>
+      <div class="fact-card"><div class="fact-icon">⏰</div><div class="fact-label">Visit Time</div><div class="fact-value">12:00 – 1:30 PM</div></div>
+      <div class="fact-card"><div class="fact-icon">🙏</div><div class="fact-label">Aarti</div><div class="fact-value">Attend Noon Aarti</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PALITANA SECTION -->
+<section id="palitana" class="theme-palitana fade-in-section" style="--accent:#7B68EE">
+  <div class="section-inner">
+    <div class="ambient-orb" style="width:500px;height:500px;background:#4a3fa0;top:0;right:-10%"></div>
+    <div class="place-hero">
+      <div class="place-accent" style="color:#7B68EE">PALITANA</div>
+      <div class="place-content">
+        <div class="section-eyebrow" style="color:#7B68EE">Day 5 · Sat, 20 Jun · 6:00 AM</div>
+        <h2 class="section-title" style="color:#F5F0E8">City of <em style="color:#7B68EE">900 Temples</em></h2>
+        <div class="divider" style="background:#7B68EE"></div>
+        <p class="section-body">Shatrunjaya Hills in Palitana is the holiest Jain pilgrimage site on Earth. 900+ intricately carved marble temples crown the hilltop, accessible only by foot. 3,800 steps of devotion lead to a world untouched by time.</p>
+      </div>
+    </div>
+    <div class="place-facts">
+      <div class="fact-card" style="border-color:rgba(123,104,238,.2)"><div class="fact-icon">⛩️</div><div class="fact-label">Temples</div><div class="fact-value">900+ Jain Temples</div></div>
+      <div class="fact-card" style="border-color:rgba(123,104,238,.2)"><div class="fact-icon">🪜</div><div class="fact-label">Steps</div><div class="fact-value">~3,800 Steps</div></div>
+      <div class="fact-card" style="border-color:rgba(123,104,238,.2)"><div class="fact-icon">⏰</div><div class="fact-label">Trek Hours</div><div class="fact-value">6:00 AM – 3:00 PM</div></div>
+      <div class="fact-card" style="border-color:rgba(123,104,238,.2)"><div class="fact-icon">🏨</div><div class="fact-label">Stay</div><div class="fact-value">Narsi Natha Trust Dharamshala</div></div>
+      <div class="fact-card" style="border-color:rgba(123,104,238,.2)"><div class="fact-icon">🌿</div><div class="fact-label">Food</div><div class="fact-value">Vegetarian Only Town</div></div>
+      <div class="fact-card" style="border-color:rgba(123,104,238,.2)"><div class="fact-icon">💰</div><div class="fact-label">Entry</div><div class="fact-value">Free</div></div>
+    </div>
+
+    <!-- Palitana step progress -->
+    <div style="margin-top:3rem">
+      <div class="section-eyebrow" style="color:#7B68EE">The Sacred Climb</div>
+      <div class="step-count" id="palitanaCount" style="color:#7B68EE">0</div>
+      <div style="font-size:.8rem;color:#888;margin-bottom:1rem">steps to the Jain Temples</div>
+      <div style="background:rgba(255,255,255,.08);border-radius:4px;height:10px;overflow:hidden">
+        <div id="palitanaBar" style="height:100%;background:linear-gradient(90deg,#7B68EE,#C9922A);width:0;transition:width 2s ease;border-radius:4px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AHMEDABAD SECTION -->
+<section id="ahmedabad" class="theme-ahmdabad fade-in-section" style="--accent:#D4501A">
+  <div class="section-inner">
+    <div class="ambient-orb" style="width:400px;height:400px;background:#D4501A;bottom:0;left:-5%"></div>
+    <div class="place-hero">
+      <div class="place-accent" style="color:#D4501A">AHMEDABAD</div>
+      <div class="place-content">
+        <div class="section-eyebrow" style="color:#D4501A">Days 5–7 · Sat–Mon</div>
+        <h2 class="section-title" style="color:#F5F0E8">Heritage City of<br><em style="color:#D4501A">Gujarat</em></h2>
+        <div class="divider" style="background:#D4501A"></div>
+        <p class="section-body">India's first UNESCO World Heritage City. Ancient mosques stand beside modernist institutes, Gandhi's ashram whispers revolution by the river, and Manek Chowk erupts into a night food market that never sleeps.</p>
+      </div>
+    </div>
+    <div class="place-facts">
+      <div class="fact-card"><div class="fact-icon">🕌</div><div class="fact-label">Heritage</div><div class="fact-value">Kankariya talao</div></div>
+      <div class="fact-card"><div class="fact-icon">🙏</div><div class="fact-label">Spiritual</div><div class="fact-value">Sabarmati Ashram</div></div>
+      <div class="fact-card"><div class="fact-icon">🌊</div><div class="fact-label">Nature</div><div class="fact-value">Adalaj Stepwell</div></div>
+      <div class="fact-card"><div class="fact-icon">🌙</div><div class="fact-label">Night Market</div><div class="fact-value">Manek Chowk</div></div>
+      <div class="fact-card"><div class="fact-icon">🍽️</div><div class="fact-label">Must Try</div><div class="fact-value">Gujarati Thali</div></div>
+      <div class="fact-card"><div class="fact-icon">🏨</div><div class="fact-label">Stay</div><div class="fact-value">Dharamshala · 3 Nights</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EKTA NAGAR SECTION -->
+<section id="ekta" class="theme-ekta fade-in-section" style="--accent:#1A9BB5">
+  <div class="section-inner">
+    <div class="ambient-orb" style="width:500px;height:500px;background:#1A6B8A;top:-5%;right:0"></div>
+    <div class="place-hero">
+      <div class="place-accent" style="color:#1A6B8A">EKTA NAGAR</div>
+      <div class="place-content">
+        <div class="section-eyebrow" style="color:#1A9BB5">Day 8 · Tue, 23 Jun</div>
+        <h2 class="section-title" style="color:#F5F0E8">The World's<br><em style="color:#1A9BB5">Tallest Statue</em></h2>
+        <div class="divider" style="background:#1A9BB5"></div>
+        <p class="section-body">Standing 182 metres tall above the Narmada River — twice the height of the Statue of Liberty — the Statue of Unity is a monument to India's iron resolve. Surrounded by valley of flowers, jungle safari zones, and the rushing river below.</p>
+      </div>
+    </div>
+    <div class="place-facts">
+      <div class="fact-card" style="border-color:rgba(26,155,181,.2)"><div class="fact-icon">🗿</div><div class="fact-label">Monument</div><div class="fact-value">Statue of Unity</div></div>
+      <div class="fact-card" style="border-color:rgba(26,155,181,.2)"><div class="fact-icon">📏</div><div class="fact-label">Height</div><div class="fact-value">182 Metres</div></div>
+      <div class="fact-card" style="border-color:rgba(26,155,181,.2)"><div class="fact-icon">🌸</div><div class="fact-label">Attraction</div><div class="fact-value">Valley of Flowers</div></div>
+      <div class="fact-card" style="border-color:rgba(26,155,181,.2)"><div class="fact-icon">🦋</div><div class="fact-label">Garden</div><div class="fact-value">Butterfly Garden</div></div>
+      <div class="fact-card" style="border-color:rgba(26,155,181,.2)"><div class="fact-icon">💰</div><div class="fact-label">Entry</div><div class="fact-value">₹350/person + ₹100 Flower Valley</div></div>
+      <div class="fact-card" style="border-color:rgba(26,155,181,.2)"><div class="fact-icon">🚉</div><div class="fact-label">Train Back</div><div class="fact-value">12928 · 9:28 PM</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINS SECTION -->
+<section class="theme-trains fade-in-section">
+  <div class="section-inner">
+    <div class="section-eyebrow" style="color:#4A90E2">All Aboard</div>
+    <h2 class="section-title">The <em style="color:#4A90E2">Iron Road</em></h2>
+    <div class="divider" style="background:#4A90E2"></div>
+    <p class="section-body" style="margin-bottom:2rem">Four trains. Three nights on tracks. The rhythm of wheels on steel carrying three explorers through the heart of Gujarat.</p>
+
+    <div class="train-grid">
+      <div class="train-card">
+        <div class="train-num">19217</div>
+        <div class="train-name">Saurashtra Janta Express</div>
+        <div class="train-route"><div class="train-dot"></div><div class="train-line"></div><div class="train-dot"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:.85rem;color:#ccc;margin-bottom:.5rem">
+          <span>Bandra Terminus</span><span>Junagadh</span>
+        </div>
+        <div class="train-meta"><span>Depart:</span><span style="color:#4A90E2">Tue, 16 Jun · 1:45 PM</span></div>
+        <div class="train-meta"><span>Class:</span><span>Sleeper (SL)</span></div>
+        <div class="train-meta"><span>Fare/Person:</span><span style="color:#C9922A">₹440</span></div>
+        <div class="train-meta"><span>Group Total:</span><span style="color:#C9922A">₹1,320</span></div>
+      </div>
+
+      <div class="train-card">
+        <div class="train-num">12972</div>
+        <div class="train-name">BVC-BDTS SF Express</div>
+        <div class="train-route"><div class="train-dot"></div><div class="train-line"></div><div class="train-dot"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:.85rem;color:#ccc;margin-bottom:.5rem">
+          <span>Songadh</span><span>Ahmedabad</span>
+        </div>
+        <div class="train-meta"><span>Depart:</span><span style="color:#4A90E2">Sat, 20 Jun · 7:06 PM</span></div>
+        <div class="train-meta"><span>Class:</span><span>Sleeper (SL)</span></div>
+        <div class="train-meta"><span>Fare/Person:</span><span style="color:#C9922A">₹220</span></div>
+        <div class="train-meta"><span>Group Total:</span><span style="color:#C9922A">₹660</span></div>
+      </div>
+
+      <div class="train-card">
+        <div class="train-num">20947</div>
+        <div class="train-name">Jan Shatabdi Express</div>
+        <div class="train-route"><div class="train-dot"></div><div class="train-line"></div><div class="train-dot"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:.85rem;color:#ccc;margin-bottom:.5rem">
+          <span>Ahmedabad</span><span>Ekta Nagar</span>
+        </div>
+        <div class="train-meta"><span>Depart:</span><span style="color:#4A90E2">Tue, 23 Jun · 7:55 AM</span></div>
+        <div class="train-meta"><span>Class:</span><span>2nd Sitting (2S)</span></div>
+        <div class="train-meta"><span>Fare/Person:</span><span style="color:#C9922A">₹120</span></div>
+        <div class="train-meta"><span>Group Total:</span><span style="color:#C9922A">₹360</span></div>
+      </div>
+
+      <div class="train-card">
+        <div class="train-num">12928</div>
+        <div class="train-name">EKNR-DDR SF Express</div>
+        <div class="train-route"><div class="train-dot"></div><div class="train-line"></div><div class="train-dot"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:.85rem;color:#ccc;margin-bottom:.5rem">
+          <span>Ekta Nagar</span><span>Dadar, Mumbai</span>
+        </div>
+        <div class="train-meta"><span>Depart:</span><span style="color:#4A90E2">Tue, 23 Jun · 9:28 PM</span></div>
+        <div class="train-meta"><span>Class:</span><span>Sleeper (SL)</span></div>
+        <div class="train-meta"><span>Fare/Person:</span><span style="color:#C9922A">₹475</span></div>
+        <div class="train-meta"><span>Group Total:</span><span style="color:#C9922A">₹1,425</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;padding:1.2rem;background:rgba(74,144,226,.08);border:1px solid rgba(74,144,226,.2);border-radius:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+      <div><div style="font-size:.75rem;color:#4A90E2;letter-spacing:.2em;text-transform:uppercase">Total Train Fare</div><div style="font-family:'Bebas Neue',cursive;font-size:2rem;color:#F5F0E8">₹3,765 <span style="font-size:1.2rem;color:#888">for group</span></div></div>
+      <div><div style="font-size:.75rem;color:#4A90E2;letter-spacing:.2em;text-transform:uppercase">Per Person</div><div style="font-family:'Bebas Neue',cursive;font-size:2rem;color:#C9922A">₹1,255</div></div>
+      <div style="font-size:.8rem;color:#888;align-self:center">💡 Book immediately on IRCTC · June is peak season</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD SECTION -->
+<section class="fade-in-section" style="background:#0D0800">
+  <div class="section-inner">
+    <div class="section-eyebrow" style="color:#C9922A">Local Flavours</div>
+    <h2 class="section-title">A <em>Culinary</em> Expedition</h2>
+    <div class="divider"></div>
+    <p class="section-body" style="margin-bottom:2rem">Gujarat's food is as legendary as its temples. From dhaba dals near Girnar to Falooda at midnight in Manek Chowk — every meal is a memory.</p>
+
+    <div class="food-grid">
+      <div class="food-card"><div class="food-emoji">🍲</div><div class="food-name">Gujarati Thali</div><div class="food-place">Ahmedabad Restaurants · ₹300/day</div></div>
+      <div class="food-card"><div class="food-emoji">🥞</div><div class="food-name">Dal Vada</div><div class="food-place">Manek Chowk Night Market</div></div>
+      <div class="food-card"><div class="food-emoji">🍦</div><div class="food-name">Falooda</div><div class="food-place">Manek Chowk · Late Night</div></div>
+      <div class="food-card"><div class="food-emoji">🍳</div><div class="food-name">Kathiyawadi Breakfast</div><div class="food-place">Farmhouse near Gir Forest</div></div>
+      <div class="food-card"><div class="food-emoji">🫓</div><div class="food-name">Khakhra & Handvo</div><div class="food-place">Ahmedabad Local Eateries</div></div>
+      <div class="food-card"><div class="food-emoji">🌱</div><div class="food-name">Pure Jain Veg</div><div class="food-place">Palitana — Vegetarian Only Town</div></div>
+      <div class="food-card"><div class="food-emoji">☕</div><div class="food-name">Dhaba Meals</div><div class="food-place">Near Girnar Taleti · ₹200/day</div></div>
+      <div class="food-card"><div class="food-emoji">🛍️</div><div class="food-name">Law Garden Market</div><div class="food-place">Night Shopping + Snacks</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUDGET SECTION -->
+<section id="budget" class="theme-budget fade-in-section">
+  <div class="section-inner">
+    <div class="section-eyebrow" style="color:#4CAF50">Money Matters</div>
+    <h2 class="section-title">The <em style="color:#4CAF50">Budget</em> Breakdown</h2>
+    <div class="divider" style="background:#4CAF50"></div>
+    <p class="section-body" style="margin-bottom:2rem">3 people · 9 days · Maximum experience · Minimum spend. Every rupee tracked, every expense shared.</p>
+
+    <!-- Grand Total -->
+    <div class="budget-total">
+      <div style="font-size:.8rem;letter-spacing:.3em;color:#888;text-transform:uppercase;margin-bottom:.5rem">Total Trip Cost · Group of 3</div>
+      <div class="budget-total-num" id="grandTotalCount">₹0</div>
+      <div style="margin-top:.5rem;font-size:.9rem;color:#aaa">Per Person: <span style="color:#C9922A;font-family:'Bebas Neue',cursive;font-size:1.5rem" id="perPersonCount">₹0</span></div>
+    </div>
+
+    <!-- Budget Cards -->
+    <div class="budget-grid">
+      <div class="budget-card" style="border-color:rgba(74,144,226,.3)">
+        <div class="budget-icon">🚆</div>
+        <div class="budget-label">Trains</div>
+        <div class="budget-amount" style="color:#4A90E2">₹3,765</div>
+        <div class="budget-per">₹1,255 / person</div>
+        <div class="budget-bar-bg"><div class="budget-bar-fill" data-width="13" style="background:#4A90E2"></div></div>
+      </div>
+      <div class="budget-card" style="border-color:rgba(201,146,42,.3)">
+        <div class="budget-icon">🚗</div>
+        <div class="budget-label">Road Transport</div>
+        <div class="budget-amount" style="color:#C9922A">₹7,400</div>
+        <div class="budget-per">₹2,467 / person</div>
+        <div class="budget-bar-bg"><div class="budget-bar-fill" data-width="25" style="background:#C9922A"></div></div>
+      </div>
+      <div class="budget-card" style="border-color:rgba(123,104,238,.3)">
+        <div class="budget-icon">🏨</div>
+        <div class="budget-label">Accommodation</div>
+        <div class="budget-amount" style="color:#7B68EE">₹3,300</div>
+        <div class="budget-per">₹1,100 / person</div>
+        <div class="budget-bar-bg"><div class="budget-bar-fill" data-width="11" style="background:#7B68EE"></div></div>
+      </div>
+      <div class="budget-card" style="border-color:rgba(232,102,58,.3)">
+        <div class="budget-icon">🎟️</div>
+        <div class="budget-label">Activities</div>
+        <div class="budget-amount" style="color:#E8663A">₹5,880</div>
+        <div class="budget-per">₹1,960 / person</div>
+        <div class="budget-bar-bg"><div class="budget-bar-fill" data-width="20" style="background:#E8663A"></div></div>
+      </div>
+      <div class="budget-card" style="border-color:rgba(76,175,80,.3)">
+        <div class="budget-icon">🍽️</div>
+        <div class="budget-label">Food & Misc</div>
+        <div class="budget-amount" style="color:#4CAF50">₹10,110</div>
+        <div class="budget-per">₹3,370 / person</div>
+        <div class="budget-bar-bg"><div class="budget-bar-fill" data-width="31" style="background:#4CAF50"></div></div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;flex-wrap:wrap">
+      <div class="chart-container" style="max-width:300px">
+        <canvas id="budgetChart" width="300" height="300"></canvas>
+      </div>
+      <div>
+        <div style="font-size:.85rem;color:#aaa;margin-bottom:1rem">Per-Person Breakdown</div>
+        <div style="display:flex;flex-direction:column;gap:.8rem">
+          <div><div style="display:flex;justify-content:space-between;font-size:.85rem"><span style="color:#4A90E2">🚆 Trains</span><span>₹1,255 <span style="color:#666">(12.8%)</span></span></div><div class="budget-bar-bg"><div class="budget-bar-fill" data-width="13" style="background:#4A90E2"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:.85rem"><span style="color:#C9922A">🚗 Road Transport</span><span>₹2,467 <span style="color:#666">(25.2%)</span></span></div><div class="budget-bar-bg"><div class="budget-bar-fill" data-width="25" style="background:#C9922A"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:.85rem"><span style="color:#7B68EE">🏨 Accommodation</span><span>₹1,100 <span style="color:#666">(10.6%)</span></span></div><div class="budget-bar-bg"><div class="budget-bar-fill" data-width="11" style="background:#7B68EE"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:.85rem"><span style="color:#E8663A">🎟️ Activities</span><span>₹1,960 <span style="color:#666">(20.0%)</span></span></div><div class="budget-bar-bg"><div class="budget-bar-fill" data-width="20" style="background:#E8663A"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:.85rem"><span style="color:#4CAF50">🍽️ Food & Misc</span><span>₹3,370 <span style="color:#666">(31.4%)</span></span></div><div class="budget-bar-bg"><div class="budget-bar-fill" data-width="31" style="background:#4CAF50"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activities Table -->
+    <div style="margin-top:3rem">
+      <div style="font-size:.8rem;color:#4CAF50;letter-spacing:.3em;text-transform:uppercase;margin-bottom:1rem">Activities & Entry Fees</div>
+      <table class="budget-table">
+        <thead><tr><th>Activity</th><th>Location</th><th>Group Total</th><th>Per Person</th></tr></thead>
+        <tbody>
+          <tr><td>🦁 Gir Forest Jungle Safari</td><td>Sasan Gir</td><td>₹4,200</td><td style="color:#C9922A">₹1,400</td></tr>
+          <tr><td>🗿 Statue of Unity Entry</td><td>Ekta Nagar</td><td>₹1,050</td><td style="color:#C9922A">₹350</td></tr>
+          <tr><td>🌸 Valley of Flowers</td><td>Ekta Nagar</td><td>₹300</td><td style="color:#C9922A">₹100</td></tr>
+          <tr><td>✨ Laser & Light Show</td><td>Ekta Nagar</td><td>₹180</td><td style="color:#C9922A">₹60</td></tr>
+          <tr><td>🌊 Adalaj Stepwell</td><td>Gandhinagar</td><td>₹75</td><td style="color:#C9922A">₹25</td></tr>
+          <tr><td>🎡 Kankaria Lake</td><td>Ahmedabad</td><td>₹75</td><td style="color:#C9922A">₹25</td></tr>
+          <tr><td>🏔️ Girnar Trek + Somnath + Palitana Trek</td><td>Various</td><td style="color:#4CAF50">Free</td><td style="color:#4CAF50">Free</td></tr>
+          <tr><td>🙏 Sabarmati Ashram</td><td>Ahmedabad</td><td style="color:#4CAF50">Free</td><td style="color:#4CAF50">Free</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Road Transport Table -->
+    <div style="margin-top:2.5rem">
+      <div style="font-size:.8rem;color:#C9922A;letter-spacing:.3em;text-transform:uppercase;margin-bottom:1rem">Road Transport</div>
+      <table class="budget-table">
+        <thead><tr><th>Route</th><th>Type</th><th>Group Total</th><th>Per Person</th></tr></thead>
+        <tbody>
+          <tr><td>Girnar Taleti → Gir → Somnath → Palitana (Full Day)</td><td>Booked Car</td><td>₹6,000</td><td style="color:#C9922A">₹2,000</td></tr>
+          <tr><td>Driver Nashta / Tip</td><td>Cash</td><td>₹200</td><td style="color:#C9922A">₹67</td></tr>
+          <tr><td>Palitana → Songadh Station</td><td>Taxi</td><td>₹600</td><td style="color:#C9922A">₹200</td></tr>
+          <tr><td>Ahmedabad Local Auto (3 days)</td><td>Auto/Taxi</td><td>₹600</td><td style="color:#C9922A">₹200</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tips -->
+    <div style="margin-top:2rem;padding:1.2rem;background:rgba(201,146,42,.08);border:1px solid rgba(201,146,42,.2);border-radius:12px">
+      <div style="font-size:.8rem;color:#C9922A;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.8rem">💡 Pro Tips</div>
+      <div style="font-size:.85rem;color:#aaa;line-height:1.8">
+        • Book all trains immediately on IRCTC — June is peak season<br>
+        • Gir safari pre-booking at <strong style="color:#4CAF50">girlion.in</strong> is mandatory<br>
+        • Carry cash for dharamshalas & local transport<br>
+        • ~₹30 IRCTC booking fee per ticket (₹120 total per person)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL MEMORY SECTION -->
+<section id="final" class="fade-in-section">
+  <div class="section-inner" style="text-align:center">
+    <div class="ambient-orb" style="width:600px;height:600px;background:#C9922A;top:10%;left:50%;transform:translateX(-50%)"></div>
+    <div style="position:relative;z-index:2">
+      <div class="section-eyebrow" style="color:#C9922A;text-align:center">The End · 24 June 2025</div>
+      <h2 class="end-title" style="font-family:'Playfair Display',serif">An <em>Expedition</em><br>Complete</h2>
+      <p class="end-sub">From Bandra Terminus at 1:45 PM to Dadar Station at 5:30 AM — 9 extraordinary days across the soul of Gujarat.</p>
+
+      <div class="final-stats">
+        <div class="final-stat"><div class="final-stat-num">9</div><div class="final-stat-label">Days</div></div>
+        <div class="final-stat"><div class="final-stat-num">7</div><div class="final-stat-label">Cities</div></div>
+        <div class="final-stat"><div class="final-stat-num">4</div><div class="final-stat-label">Trains</div></div>
+        <div class="final-stat"><div class="final-stat-num">2</div><div class="final-stat-label">Major Treks</div></div>
+        <div class="final-stat"><div class="final-stat-num">1</div><div class="final-stat-label">Lion Safari</div></div>
+        <div class="final-stat"><div class="final-stat-num">300+</div><div class="final-stat-label">Temples Seen</div></div>
+        <div class="final-stat"><div class="final-stat-num">13,799</div><div class="final-stat-label">Total Steps</div></div>
+        <div class="final-stat"><div class="final-stat-num">₹10,486</div><div class="final-stat-label">Per Person</div></div>
+      </div>
+
+      <div style="margin:3rem 0;padding:2rem;border:1px solid rgba(201,146,42,.2);border-radius:16px;background:rgba(201,146,42,.04);max-width:700px;margin-left:auto;margin-right:auto">
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#F5F0E8;line-height:1.8;font-style:italic">"Mumbai → Junagadh → Girnar → Gir → Somnath → Palitana → Ahmedabad → Ekta Nagar → Mumbai"</div>
+        <div style="font-size:.8rem;color:#888;margin-top:1rem;letter-spacing:.2em">THE COMPLETE GUJARAT ROUTE · JUNE 2025</div>
+      </div>
+
+      <div style="font-size:.9rem;color:#666;margin-top:2rem">
+        19217 · 12972 · 20947 · 12928 &nbsp;·&nbsp; Bandra to Dadar &nbsp;·&nbsp; 3 Explorers &nbsp;·&nbsp; ₹31,458 Total
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Gujarat Expedition 2025</strong> &nbsp;·&nbsp; 16–24 June &nbsp;·&nbsp; 3 People &nbsp;·&nbsp; An Immersive Journey &nbsp;·&nbsp; Made with ❤️
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
